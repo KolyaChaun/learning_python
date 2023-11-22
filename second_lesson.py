@@ -17,9 +17,9 @@ all_money_earned = years_until_retirement * average_salary * 12
 salary_in_dollars = all_money_earned / 37.3
 salary_in_dollars = round(salary_in_dollars, 2)
 
-count_of_toyota = int(salary_in_dollars / 31500)
+count_of_toyota = salary_in_dollars // 31500
 
 print(
-    f"I,{name} can only earn __{salary_in_dollars}__ dollars, this is enough for only __{count_of_toyota}__ cars, "
-    f"I am not satisfied with this, so I will change my life and study programming hard!"
+    f"I,{name} can only earn __{salary_in_dollars}__ dollars, this is enough for only __{round(count_of_toyota)}__ cars"
+    f", I am not satisfied with this, so I will change my life and study programming hard!"
 )
