@@ -32,6 +32,14 @@ average_score_by_group = (
     + students["Маша Кера"]["Середній бал"]
     + students["Микола Чаюн"]["Середній бал"]
 ) / len(students)
+
+sum_score = 0
+
+for student, data in students.items():
+    sum_score += data["Середній бал"]
+
+average = sum_score / len(students)
+
 # average_score_by_group_difficult = sum(student["Середній бал"] for student in students.values()) / len(students)
 
 students["Іван Петров"]["bank_account_number"] = None
