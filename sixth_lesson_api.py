@@ -22,7 +22,7 @@ for person in family:
     if person["loan_per_month"] > person["monthly_income"]:
         loan_more_than_income = 1
         count_loan_more_than_income += loan_more_than_income
-    if person["gender"] == "female" and person["own_home"] == "Yes":
+    if person["gender"] == "female" and person["own_home"] == True:
         women_with_housing = 1
         count_women_with_housing += women_with_housing
 
