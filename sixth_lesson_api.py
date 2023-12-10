@@ -13,16 +13,16 @@ count_women_with_housing = 0
 
 for person in family:
     large_family = person["large_family"]
-    if large_family == True and person["age"] > 35:
+    if large_family is True and person["age"] > 35:
         monthly_income_of_person = person["monthly_income"]
         monthly_income += monthly_income_of_person
-    if large_family == True:
+    if large_family is True:
         large_families = large_family
         count_of_large_families += large_families
     if person["loan_per_month"] > person["monthly_income"]:
         loan_more_than_income = 1
         count_loan_more_than_income += loan_more_than_income
-    if person["gender"] == "female" and person["own_home"] == True:
+    if person["gender"] == "female" and person["own_home"] is True:
         women_with_housing = 1
         count_women_with_housing += women_with_housing
 
