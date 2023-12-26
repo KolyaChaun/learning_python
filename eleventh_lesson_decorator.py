@@ -13,7 +13,7 @@ def decorator_create_file_with_logs(func):
                 f"Швидкість виконання функції: {function_loading_speed}\n"
                 f"---------------------------\n"
             )
-
+            return result
     return wrapper
 
 
@@ -35,5 +35,6 @@ def number_to_power(num1: int, num2: int) -> int:
 get_message()
 multiplication(2, 5)
 number_to_power(2, 10)
-multiplication(3, 6)
-number_to_power(10, 5)
+multiplication(3, 3)
+number_to_power(2, 5)
+
